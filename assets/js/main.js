@@ -1,4 +1,4 @@
-const API_KEY = "e587487016ae74ac3b861c191a2ded25"
+const API_KEY = config.API_KEY
 const getCurrentWeatherData = async(city)=>{
     const response = await fetch("https://api.openweathermap.org/data/2.5/weather?q="+city+"&appid="+API_KEY+"&units=metric")
     return response.json()
