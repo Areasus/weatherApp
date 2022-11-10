@@ -17,6 +17,15 @@
   </head>
   <body>
     <main id="container">
+
+      <article id="drop-search">
+        <label for="cars">Choose a City:</label>
+        <select name="cars" id="cities">
+          <option value="pokhara">pokhara</option>
+          <option value="kathmandu">kathmandu</option>
+        </select>
+      </article>
+
       <!-- current forecast -->
       <article id="current">
         <h1 class="city">City:</h1>
@@ -61,12 +70,26 @@
       <!-- daily forecast -->
       <article id="daily">
         <h1>Forecast for next 5 days</h1>
-        <article>
-          <h2>Today</h2>
-          <p>icon</p>
-          <p>low</p>
-          <p>high</p>
-        </article>
+        <section class="five-days">
+          <article class="days">
+            <h2>Today</h2>
+            <img src="" alt="icon">
+            <p class="five-min-temp">low</p>
+            <p class="five-max-temp">high</p>
+          </article>
+          <article class="days">
+            <h2>Voli</h2>
+            <img src="" alt="icon">
+            <p class="five-min-temp">low</p>
+            <p class="five-max-temp">high</p>
+          </article>
+          <article class="days">
+            <h2>parsi</h2>
+            <img src="" alt="icon">
+            <p class="five-min-temp">low</p>
+            <p class="five-max-temp">high</p>
+          </article>
+        </section>
       </article>
 
       <section class="feels-humidity">

@@ -22,7 +22,6 @@ h1,h2,p{
 body{
     margin: 0;
     font-family: Nunito ,Arial, Helvetica, sans-serif;
-    width: 400px;
     margin: auto;
 }
 
@@ -62,7 +61,7 @@ body{
     flex-direction: column;
 }
 #hourly h1{
-    align-self: center;
+    text-align: center;
     
 }
 #hourly .hourly-items{
@@ -92,4 +91,56 @@ body{
     padding: 10px;
     justify-content: center;
     align-items: center;
+}
+
+
+#daily{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.five-days{
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+.five-days .days{
+    margin:5px;
+    padding:  0px 10px;
+    border-radius: 5px;
+    border: 1px solid grey;
+    display: flex;
+    justify-content: space-between;
+}
+.days{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.days .five-min-temp{
+    opacity: 60%;
+}
+
+#drop-search{
+    display: flex;
+    justify-content: center;
+}
+
+#drop-search, #cities{
+    font-size: 1.6rem;
+    font-weight: var(--font-semibold);
+}
+
+
+@media(width>=600px)
+{
+    #container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 10px;
+        margin: 50px;
+    }
 }
