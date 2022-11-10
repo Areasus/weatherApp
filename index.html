@@ -4,10 +4,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>HTML 5 Boilerplate</title>
+    <title>Weather App</title>
+
+    <!-- css area -->
     <link rel="stylesheet" href="./assets/css/main.css">
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
   </head>
   <body>
-	<script src="./assets/js/main.js"></script>
+    <main id="container">
+      <!-- current forecast -->
+      <article id="current">
+        <h1 class="city">City:</h1>
+        <p class="current-temp">Temperature:</p>
+        <p class="current-desc">Description</p>
+        <p class="current-hl">High/Low</p>
+      </article>
+
+      <!-- hourly forecasr -->
+      <article id="hourly">
+        <h1>Hourly Forecasts</h1>
+        <article>
+          <h2>Now</h2>
+          <img src="" alt="icon">
+          <p>temp</p>
+        </article>
+      </article>
+
+      <!-- daily forecast -->
+      <article id="daily">
+        <h1>Forecast for next 5 days</h1>
+        <article>
+          <h2>Today</h2>
+          <p>icon</p>
+          <p>low</p>
+          <p>high</p>
+        </article>
+      </article>
+
+      <!-- feels like area -->
+      <article id="feels-like">
+        <h1>Feels like</h1>
+        <p>temp</p>
+      </article>
+
+      <!-- humidity area -->
+      <article id="humidity">
+        <h1>Hummidity</h1>
+        <p>Value</p>
+      </article>
+    </main>
+    
+
+    <!-- JS area -->
+	  <script src="./assets/js/main.js"></script>
   </body>
 </html>
