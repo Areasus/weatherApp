@@ -54,3 +54,42 @@ body{
     font-size: var(--font-regular);
     font-weight: var(--font-semibold);
 }
+
+/* hourly cast area */
+
+#hourly{
+    display: flex;
+    flex-direction: column;
+}
+#hourly h1{
+    align-self: center;
+    
+}
+#hourly .hourly-items{
+    display: flex;
+    overflow-x: auto;
+    
+}
+#hourly .hourly-items article{
+    border: 1px solid grey;
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin: 5px 10px;
+}
+
+.feels-humidity{
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.feels-humidity article{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid grey;
+    min-width: 150px;
+    border-radius: 10px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+}
