@@ -30,7 +30,8 @@ const pushCurrentData =({name,main:{temp,temp_max,temp_min},weather:[{descriptio
 
 const pushHourlyData =(data)=>{
     console.log(data)
-    let hourlyData =data.slice(1,13);
+    // let hourlyData =data.slice(1,13);
+    let hourlyData =data;
     const hourlycontainer = document.querySelector(".hourly-items");
     let innerHtml=``;
 
